@@ -78,6 +78,6 @@ if guid != item.getElementsByTagName('guid')[0].firstChild.data:
     f.write(item.getElementsByTagName('guid')[0].firstChild.data)
     print 'GUID saved'
   if dmTwitterAccount != '':
-    api.send_direct_message(screen_name='freelancewebdev',text=message)
+    api.send_direct_message(screen_name=dmTwitterAccount,text=message)
 else:
   print message
