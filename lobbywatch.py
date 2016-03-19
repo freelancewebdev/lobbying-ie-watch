@@ -49,7 +49,6 @@ if os.path.isfile(datafile):
   with open(datafile,'r') as f:
     guid = f.readline()
 if guid != item.getElementsByTagName('guid')[0].firstChild.data:
-  #we have a new lobby item
   url = item.getElementsByTagName('link')[0].firstChild.data
   description = item.getElementsByTagName('description')[0].firstChild.data
   rep = dict((re.escape(k), v) for k, v in rep.iteritems())
